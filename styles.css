@@ -56,6 +56,16 @@ h2{
   background-color: #eff0f2;
   padding: 60px 2px;
 }
+@media screen and (max-width: 1280px) {
+  .bg-career{
+    padding: 50px 30px;
+}
+}
+@media screen and (max-width: 988px) {
+  .bg-career{
+    padding: 0px;
+}
+}
 /* Navigation & home Section */
 
 header {
@@ -192,6 +202,35 @@ header {
   text-align: center;
   font-weight: bold;
 }
+.front{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c2b39;
+  color: white;
+  flex-direction: column;
+}
+.front p{
+  font-size: 1.7rem;
+}
+.back{
+  display: none;
+  padding: 20px;
+}
+.back h6{
+  color: #00a8e1;
+  font-weight: bold;
+}
+.back p{
+  font-size: 0.8rem;
+}
+.card:hover .front{
+  display: none;
+}
+.card:hover .back{
+  display: block;
+}
+
 
 /* .about-us {
   padding: 50px;
@@ -202,12 +241,16 @@ header {
 .text-about{
   padding-top: 100px;
 }
-
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1280px) {
+  .text-about{
+    padding-top: 20px;
+}
+}
+/* @media screen and (max-width: 940px) {
   .about-us {
     padding: 30px 10px;
   }
-}
+} */
 
 .about-us .text p {
   font-weight: 300;
@@ -786,8 +829,6 @@ height: 40vh;
 #submit:hover {
   box-shadow: 0 0 2px #212529;
 }
-
-
 
 @media screen and (max-width: 375px) {
   .career-heading{
