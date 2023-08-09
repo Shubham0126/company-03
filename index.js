@@ -1,0 +1,7 @@
+
+// Add hover effect to menus
+jQuery('div.nav li.dropdown').hover(function() {
+    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn();
+  }, function() {
+    jQuery(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut();
+  });
